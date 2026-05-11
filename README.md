@@ -11,7 +11,7 @@ mkdir vaultwarden
 mkdir vaultwarden/ssl
 ```
 ```
-openssl req -x509 -newkey rsa:4096 -keyout ssl/key.pem -out ssl/cert.pem -sha256 -days 3650 -nodes
+openssl req -x509 -newkey rsa:4096 -keyout vaultwarden/ssl/key.pem -out vaultwarden/ssl/cert.pem -sha256 -days 3650 -nodes
 ```
 ```
 nvim vaultwarden/docker-compose.yml
