@@ -38,7 +38,7 @@ services:
       - db
 
   db:
-    image: postgres
+    image: postgres:15-alpine
     container_name: vaultwarden-db
     restart: always
     environment:
