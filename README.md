@@ -8,6 +8,9 @@ sudo pacman -S podman
 mkdir -p vaultwarden/ssl vaultwarden/db-data vaultwarden/bitwarden 
 ```
 ```
+cd vaultwarden
+```
+```
 openssl req -x509 -newkey rsa:4096 -keyout vaultwarden/ssl/key.pem -out vaultwarden/ssl/cert.pem -sha256 -days 3650 -nodes
 ```
 ```
